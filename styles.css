@@ -1,0 +1,472 @@
+/* ============================= */
+/* RESET */
+/* ============================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto;
+  line-height: 1.6;
+  color: #ffffff;
+  background: #0b0b0b;
+}
+
+/* ============================= */
+/* GLOBAL */
+/* ============================= */
+
+.page {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  padding: 90px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header__title {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.section-header__subtitle {
+  color: #aaa;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+.button {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.button--primary {
+  background: white;
+  color: black;
+}
+
+.button--primary:hover {
+  background: #eaeaea;
+}
+
+.button--ghost {
+  border: 1px solid white;
+  color: white;
+}
+
+.button--ghost:hover {
+  background: white;
+  color: black;
+}
+
+.button--outline {
+  border: 1px solid white;
+  color: white;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #0b0b0b;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.logo__image {
+  width: 40px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.nav__link:hover {
+  color: white;
+}
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero {
+  padding: 120px 0;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero__title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero__subtitle {
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.hero__micro {
+  list-style: none;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.hero__micro li {
+  margin-bottom: 6px;
+}
+
+/* ============================= */
+/* PROBLEM */
+/* ============================= */
+
+.problem__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.problem__item {
+  background: #111;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.problem__item-title {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* ============================= */
+/* COMPARISON TABLE */
+/* ============================= */
+
+.comparison {
+  margin-top: 60px;
+}
+
+.comparison__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.comparison__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison__table th,
+.comparison__table td {
+  border: 1px solid #222;
+  padding: 12px;
+  text-align: left;
+}
+
+.comparison__table th {
+  background: #111;
+}
+
+/* ============================= */
+/* BENEFITS */
+/* ============================= */
+
+.benefits {
+  background: #0f0f0f;
+}
+
+.benefits__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  list-style: none;
+}
+
+.benefits__item {
+  background: #111;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+/* ============================= */
+/* PACKAGES */
+/* ============================= */
+
+.packages__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.package {
+  background: #111;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.package__title {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.package__price {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.package__features {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.package__features li {
+  margin-bottom: 8px;
+}
+
+.packages__note {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* ============================= */
+/* PROCESS */
+/* ============================= */
+
+.process__steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  list-style: none;
+}
+
+.process__step {
+  background: #111;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.process__step-title {
+  margin-bottom: 10px;
+}
+
+/* ============================= */
+/* TESTIMONIALS */
+/* ============================= */
+
+.testimonials__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  list-style: none;
+}
+
+.testimonial {
+  background: #111;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.testimonial__quote {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* ============================= */
+/* FAQ */
+/* ============================= */
+
+.faq__item {
+  border-bottom: 1px solid #222;
+  padding: 15px 0;
+}
+
+.faq__question {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ============================= */
+/* FORM */
+/* ============================= */
+
+.form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form__row {
+  margin-bottom: 20px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form__input,
+.form__textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #0f0f0f;
+  color: white;
+}
+
+.form__actions {
+  margin-top: 25px;
+}
+
+.form__privacy {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.footer {
+  border-top: 1px solid #1a1a1a;
+  padding: 50px 0;
+  margin-top: 80px;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__list li {
+  margin-bottom: 8px;
+}
+
+.footer__list a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer__copy {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 1024px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .problem__grid,
+  .benefits__list,
+  .process__steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .packages__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+
+  .problem__grid,
+  .benefits__list,
+  .process__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+}

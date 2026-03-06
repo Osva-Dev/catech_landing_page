@@ -1,11 +1,562 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CATECH</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>CATECH LANDING PAGE</h1>
+    <div class="page">
+      <!-- ===== HEADER / NAV ===== -->
+      <header class="header header--sticky" role="banner">
+        <div class="header__container container">
+          <a class="logo" href="/" aria-label="CATECH - Inicio">
+            <img class="logo__image" src="logo.jpg" alt="Logo CATECH" />
+            <span class="logo__text">CATECH</span>
+          </a>
+
+          <nav class="nav" aria-label="Navegación principal">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#beneficios">Beneficios</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#paquetes">Paquetes</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#proceso">Proceso</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#testimonios">Testimonios</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+
+          <a class="button button--primary header__cta" href="#contacto"
+            >Solicitar asesoría</a
+          >
+        </div>
+      </header>
+
+      <!-- ===== HERO ===== -->
+      <section class="hero" id="inicio" role="region" aria-label="Hero">
+        <div class="hero__inner container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Tu sitio web que impulsa el crecimiento de tu negocio
+            </h1>
+            <p class="hero__subtitle">
+              Diseñamos landing pages estratégicas, rápidas y optimizadas para
+              convertir visitantes en clientes reales.
+            </p>
+
+            <div class="hero__actions">
+              <a class="button button--primary" href="#contacto"
+                >Contactarnos</a
+              >
+              <a class="button button--ghost" href="#paquetes">Ver paquetes</a>
+            </div>
+
+            <!-- Microcopy / confianza -->
+            <ul class="hero__micro">
+              <li>Entrega rápida — lanzamiento en 7–14 días</li>
+              <li>Optimización para campañas publicitarias</li>
+              <li>Soporte y mantenimiento opcional</li>
+            </ul>
+          </div>
+
+          <figure class="hero__visual" aria-hidden="true">
+            <!-- reemplaza con imagen / mockup -->
+            <img src="hero-mockup.jpg" alt="" />
+          </figure>
+        </div>
+      </section>
+
+      <main class="main" role="main">
+        <!-- ===== PROBLEM / WHY ===== -->
+        <section class="problem container" id="por-que">
+          <header class="section-header">
+            <h2 class="section-header__title">
+              ¿Por qué necesitas una página web?
+            </h2>
+            <p class="section-header__subtitle">
+              Una página web no es sólo presencia: es una herramienta de ventas,
+              visibilidad y profesionalismo.
+            </p>
+          </header>
+
+          <div class="problem__grid">
+            <article class="problem__item">
+              <h3 class="problem__item-title">Alcance ilimitado</h3>
+              <p class="problem__item-text">
+                Tu negocio deja de depender únicamente del tráfico local. Una
+                web te permite recibir clientes de cualquier región.
+              </p>
+            </article>
+
+            <article class="problem__item">
+              <h3 class="problem__item-title">Disponible 24/7</h3>
+              <p class="problem__item-text">
+                Los usuarios pueden informarse, reservar o comprar fuera del
+                horario comercial — la web trabaja por ti constantemente.
+              </p>
+            </article>
+
+            <article class="problem__item">
+              <h3 class="problem__item-title">Confianza y profesionalismo</h3>
+              <p class="problem__item-text">
+                Un sitio bien diseñado mejora la percepción de tu marca y
+                facilita la decisión de compra.
+              </p>
+            </article>
+
+            <article class="problem__item">
+              <h3 class="problem__item-title">Escalabilidad y análisis</h3>
+              <p class="problem__item-text">
+                Analíticas, optimizaciones y campañas te permiten escalar ventas
+                sin aumentar costos fijos de la misma forma que un local físico.
+              </p>
+            </article>
+          </div>
+
+          <!-- COMPARACIÓN RÁPIDA -->
+          <!-- COMPARACIÓN DE ESTRATEGIAS -->
+          <div class="comparison">
+            <h3 class="comparison__title">
+              ¿Cómo consiguen clientes la mayoría de los negocios?
+            </h3>
+
+            <table
+              class="comparison__table"
+              role="table"
+              aria-label="Comparación de estrategias para conseguir clientes"
+            >
+              <thead>
+                <tr>
+                  <th>Estrategia</th>
+                  <th>Redes Sociales</th>
+                  <th>Recomendaciones</th>
+                  <th>Directorios</th>
+                  <th>Nuestra Landing Page</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Alcance</td>
+                  <td>Limitado al algoritmo</td>
+                  <td>Solo clientes cercanos</td>
+                  <td>Búsquedas específicas</td>
+                  <td>Global (SEO + anuncios)</td>
+                </tr>
+
+                <tr>
+                  <td>Control del negocio</td>
+                  <td>Dependes de la plataforma</td>
+                  <td>No es predecible</td>
+                  <td>Poca personalización</td>
+                  <td>Control total</td>
+                </tr>
+
+                <tr>
+                  <td>Disponibilidad</td>
+                  <td>Depende de publicaciones</td>
+                  <td>Esporádico</td>
+                  <td>Limitado</td>
+                  <td>24/7</td>
+                </tr>
+
+                <tr>
+                  <td>Conversión de clientes</td>
+                  <td>Media</td>
+                  <td>Baja</td>
+                  <td>Media</td>
+                  <td>Alta (optimizada para ventas)</td>
+                </tr>
+
+                <tr>
+                  <td>Escalabilidad</td>
+                  <td>Difícil crecer sin ads</td>
+                  <td>No escalable</td>
+                  <td>Limitada</td>
+                  <td>Alta (SEO + campañas)</td>
+                </tr>
+
+                <tr>
+                  <td>Profesionalismo</td>
+                  <td>Medio</td>
+                  <td>Bajo</td>
+                  <td>Medio</td>
+                  <td>Alto</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ===== BENEFITS / FEATURES ===== -->
+        <section
+          class="benefits"
+          id="beneficios"
+          role="region"
+          aria-label="Beneficios"
+        >
+          <div class="container">
+            <header class="section-header">
+              <h2 class="section-header__title">Ventajas que vas a obtener</h2>
+              <p class="section-header__subtitle">
+                Nuestras landing pages están diseñadas para maximizar
+                resultados.
+              </p>
+            </header>
+
+            <ul class="benefits__list">
+              <li class="benefits__item">
+                <strong>Conversiones optimizadas</strong>
+                <span
+                  >Copy, UX y estructura pensada para que el usuario realice la
+                  acción (lead, compra o reserva).</span
+                >
+              </li>
+              <li class="benefits__item">
+                <strong>Velocidad y rendimiento</strong>
+                <span>Tiempo de carga reducido y prácticas para buen SEO.</span>
+              </li>
+              <li class="benefits__item">
+                <strong>Compatibilidad móvil</strong>
+                <span
+                  >Diseño responsive que convierte en cualquier
+                  dispositivo.</span
+                >
+              </li>
+              <li class="benefits__item">
+                <strong>Integraciones</strong>
+                <span
+                  >Formularios, CRM, email marketing, pixels de conversión y
+                  más.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ===== PAQUETES ===== -->
+        <section
+          class="packages"
+          id="paquetes"
+          role="region"
+          aria-label="Paquetes"
+        >
+          <div class="container">
+            <header class="section-header">
+              <h2 class="section-header__title">Paquetes</h2>
+              <p class="section-header__subtitle">
+                Planes pensados para diferentes necesidades y presupuestos.
+              </p>
+            </header>
+
+            <div class="packages__grid" role="list">
+              <article
+                class="package package--starter"
+                role="listitem"
+                aria-labelledby="pkg-starter"
+              >
+                <h3 id="pkg-starter" class="package__title">Starter</h3>
+                <p class="package__price">MXN 5,500*</p>
+                <ul class="package__features">
+                  <li>Landing page 1 sección</li>
+                  <li>Formulario de contacto</li>
+                  <li>Optimización básica</li>
+                  <li>Entrega 7 días</li>
+                </ul>
+                <a class="button button--outline package__cta" href="#contacto"
+                  >Solicitar Starter</a
+                >
+              </article>
+
+              <article
+                class="package package--growth"
+                role="listitem"
+                aria-labelledby="pkg-growth"
+              >
+                <h3 id="pkg-growth" class="package__title">Growth</h3>
+                <p class="package__price">MXN 12,500*</p>
+                <ul class="package__features">
+                  <li>Landing multi-sección</li>
+                  <li>Integración con CRM / Email</li>
+                  <li>Optimización SEO básica</li>
+                  <li>Entrega 10–14 días</li>
+                </ul>
+                <a class="button button--primary package__cta" href="#contacto"
+                  >Solicitar Growth</a
+                >
+              </article>
+
+              <article
+                class="package package--premium"
+                role="listitem"
+                aria-labelledby="pkg-premium"
+              >
+                <h3 id="pkg-premium" class="package__title">Premium</h3>
+                <p class="package__price">MXN 28,000*</p>
+                <ul class="package__features">
+                  <li>Landing + A/B testing</li>
+                  <li>Campaña inicial recomendada</li>
+                  <li>Soporte y mantenimiento 1 mes</li>
+                  <li>Entrega 14–21 días</li>
+                </ul>
+                <a class="button button--primary package__cta" href="#contacto"
+                  >Solicitar Premium</a
+                >
+              </article>
+            </div>
+
+            <p class="packages__note">
+              *Precios referenciales. Cotizaciones personalizadas según alcance
+              del proyecto.
+            </p>
+          </div>
+        </section>
+
+        <!-- ===== PROCESO ===== -->
+        <section
+          class="process"
+          id="proceso"
+          role="region"
+          aria-label="Proceso"
+        >
+          <div class="container">
+            <header class="section-header">
+              <h2 class="section-header__title">Nuestro proceso</h2>
+              <p class="section-header__subtitle">
+                Rápido, transparente y enfocado a resultados.
+              </p>
+            </header>
+
+            <ol class="process__steps">
+              <li class="process__step">
+                <h4 class="process__step-title">1. Diagnóstico</h4>
+                <p class="process__step-desc">
+                  Analizamos tu negocio, audiencia y objetivos comerciales.
+                </p>
+              </li>
+              <li class="process__step">
+                <h4 class="process__step-title">2. Estrategia & copy</h4>
+                <p class="process__step-desc">
+                  Proponemos la estructura, mensaje y CTA que mejor conviertan.
+                </p>
+              </li>
+              <li class="process__step">
+                <h4 class="process__step-title">3. Diseño & desarrollo</h4>
+                <p class="process__step-desc">
+                  Maquetamos en HTML/CSS/JS, optimizamos rendimiento y SEO
+                  técnico.
+                </p>
+              </li>
+              <li class="process__step">
+                <h4 class="process__step-title">4. Pruebas & lanzamiento</h4>
+                <p class="process__step-desc">
+                  QA, pruebas de usabilidad y lanzamiento con seguimiento
+                  inicial.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- ===== TESTIMONIOS ===== -->
+        <section
+          class="testimonials"
+          id="testimonios"
+          role="region"
+          aria-label="Testimonios"
+        >
+          <div class="container">
+            <header class="section-header">
+              <h2 class="section-header__title">
+                Lo que dicen nuestros clientes
+              </h2>
+            </header>
+
+            <ul class="testimonials__list">
+              <li class="testimonial">
+                <blockquote class="testimonial__quote">
+                  "La landing que nos entregaron duplicó nuestros leads en el
+                  primer mes."
+                </blockquote>
+                <p class="testimonial__meta">
+                  — María López, <span>Clinica Salud+</span>
+                </p>
+              </li>
+
+              <li class="testimonial">
+                <blockquote class="testimonial__quote">
+                  "Excelente comunicación y resultados medibles desde la semana
+                  2."
+                </blockquote>
+                <p class="testimonial__meta">
+                  — Juan Pérez, <span>Taller AutoPro</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ===== FAQ ===== -->
+        <section
+          class="faq container"
+          id="faq"
+          role="region"
+          aria-label="Preguntas frecuentes"
+        >
+          <header class="section-header">
+            <h2 class="section-header__title">Preguntas frecuentes</h2>
+          </header>
+
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary class="faq__question">
+                ¿Cuánto tiempo tarda el desarrollo?
+              </summary>
+              <div class="faq__answer">
+                Dependiendo del paquete y alcance, entre 7 y 21 días hábiles.
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__question">
+                ¿Puedo pedir cambios después de la entrega?
+              </summary>
+              <div class="faq__answer">
+                Incluimos revisiones. También ofrecemos planes de soporte
+                mensual para cambios continuos.
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__question">
+                ¿Los precios incluyen hosting?
+              </summary>
+              <div class="faq__answer">
+                Los precios de paquete son por desarrollo. Podemos gestionar
+                hosting y mantenimiento como servicio adicional.
+              </div>
+            </details>
+          </div>
+        </section>
+      </main>
+
+      <!-- ===== CONTACT / FORM ===== -->
+      <section
+        class="contact container"
+        id="contacto"
+        role="region"
+        aria-label="Contacto"
+      >
+        <header class="section-header">
+          <h2 class="section-header__title">Agenda tu asesoría gratuita</h2>
+          <p class="section-header__subtitle">
+            Completa el formulario y nos pondremos en contacto en 24–48 horas
+            hábiles.
+          </p>
+        </header>
+
+        <form class="form" action="/enviar-solicitud" method="post" novalidate>
+          <div class="form__row">
+            <label class="form__label" for="name">Nombre completo</label>
+            <input
+              id="name"
+              name="name"
+              class="form__input"
+              type="text"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="email">Correo electrónico</label>
+            <input
+              id="email"
+              name="email"
+              class="form__input"
+              type="email"
+              placeholder="tu@correo.com"
+              required
+            />
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="company">Empresa (opcional)</label>
+            <input
+              id="company"
+              name="company"
+              class="form__input"
+              type="text"
+              placeholder="Nombre de la empresa"
+            />
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="message"
+              >Cuéntanos sobre tu proyecto</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              class="form__textarea"
+              rows="5"
+              placeholder="¿Qué necesitas?"
+            ></textarea>
+          </div>
+
+          <div class="form__actions">
+            <button class="button button--primary" type="submit">
+              Enviar solicitud
+            </button>
+            <p class="form__privacy">
+              Al enviar aceptas que tratemos tus datos para gestionar la
+              solicitud.
+              <a href="/politica-privacidad">Política de privacidad</a>.
+            </p>
+          </div>
+        </form>
+      </section>
+
+      <!-- ===== FOOTER ===== -->
+      <footer class="footer" role="contentinfo">
+        <div class="footer__inner container">
+          <div class="footer__brand">
+            <a class="logo logo--small" href="/">
+              <img class="logo__image" src="logo.jpg" alt="CATECH logo" />
+              <span class="logo__text">CATECH</span>
+            </a>
+            <p class="footer__desc">
+              Diseño y desarrollo de landing pages para empresas y
+              profesionales.
+            </p>
+          </div>
+
+          <nav class="footer__nav" aria-label="Enlaces de pie de página">
+            <ul class="footer__list">
+              <li><a href="#paquetes">Paquetes</a></li>
+              <li><a href="#proceso">Proceso</a></li>
+              <li><a href="#testimonios">Testimonios</a></li>
+              <li><a href="/aviso-legal">Aviso legal</a></li>
+            </ul>
+          </nav>
+
+          <div class="footer__copy">
+            <p>
+              © <span id="year"></span> CATECH — Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
