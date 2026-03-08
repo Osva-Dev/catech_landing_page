@@ -1,0 +1,36 @@
+.hero {
+  padding: 120px 0;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero__title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero__subtitle {
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.hero__micro {
+  list-style: none;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.hero__micro li {
+  margin-bottom: 6px;
+}

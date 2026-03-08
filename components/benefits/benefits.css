@@ -1,0 +1,16 @@
+.benefits {
+  background: #0f0f0f;
+}
+
+.benefits__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  list-style: none;
+}
+
+.benefits__item {
+  background: #111;
+  padding: 30px;
+  border-radius: 8px;
+}

@@ -1,4 +1,8 @@
 @import url(/components/navbar/navbar.css);
+@import url(/components/hero/hero.css);
+@import url(/components/benefits/benefits.css);
+@import url(/components/packages/packages.css);
+@import url(/components/form/form.css);
 @import url(/components/footer/footer.css);
 
 /* ============================= */
@@ -102,47 +106,6 @@ section {
 }
 
 /* ============================= */
-/* HERO */
-/* ============================= */
-
-.hero {
-  padding: 120px 0;
-}
-
-.hero__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 50px;
-}
-
-.hero__title {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.hero__subtitle {
-  color: #bbb;
-  margin-bottom: 30px;
-}
-
-.hero__actions {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 30px;
-}
-
-.hero__micro {
-  list-style: none;
-  font-size: 0.9rem;
-  color: #999;
-}
-
-.hero__micro li {
-  margin-bottom: 6px;
-}
-
-/* ============================= */
 /* PROBLEM */
 /* ============================= */
 
@@ -193,70 +156,6 @@ section {
 }
 
 /* ============================= */
-/* BENEFITS */
-/* ============================= */
-
-.benefits {
-  background: #0f0f0f;
-}
-
-.benefits__list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  list-style: none;
-}
-
-.benefits__item {
-  background: #111;
-  padding: 30px;
-  border-radius: 8px;
-}
-
-/* ============================= */
-/* PACKAGES */
-/* ============================= */
-
-.packages__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 35px;
-}
-
-.package {
-  background: #111;
-  padding: 40px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.package__title {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-}
-
-.package__price {
-  font-size: 1.8rem;
-  margin-bottom: 25px;
-}
-
-.package__features {
-  list-style: none;
-  margin-bottom: 25px;
-}
-
-.package__features li {
-  margin-bottom: 8px;
-}
-
-.packages__note {
-  text-align: center;
-  margin-top: 25px;
-  font-size: 0.9rem;
-  color: #999;
-}
-
-/* ============================= */
 /* PROCESS */
 /* ============================= */
 
@@ -278,28 +177,6 @@ section {
 }
 
 /* ============================= */
-/* TESTIMONIALS */
-/* ============================= */
-
-.testimonials__list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  list-style: none;
-}
-
-.testimonial {
-  background: #111;
-  padding: 30px;
-  border-radius: 8px;
-}
-
-.testimonial__quote {
-  font-style: italic;
-  margin-bottom: 10px;
-}
-
-/* ============================= */
 /* FAQ */
 /* ============================= */
 
@@ -311,44 +188,6 @@ section {
 .faq__question {
   cursor: pointer;
   font-weight: bold;
-}
-
-/* ============================= */
-/* FORM */
-/* ============================= */
-
-.form {
-  max-width: 600px;
-  margin: auto;
-}
-
-.form__row {
-  margin-bottom: 20px;
-}
-
-.form__label {
-  display: block;
-  margin-bottom: 6px;
-}
-
-.form__input,
-.form__textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #333;
-  border-radius: 6px;
-  background: #0f0f0f;
-  color: white;
-}
-
-.form__actions {
-  margin-top: 25px;
-}
-
-.form__privacy {
-  margin-top: 10px;
-  font-size: 0.8rem;
-  color: #999;
 }
 
 /* ============================= */

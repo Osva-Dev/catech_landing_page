@@ -9,39 +9,7 @@
   <body>
     <div class="page">
       <div id="navbar"></div>
-      <section class="hero" id="inicio" role="region" aria-label="Hero">
-        <div class="hero__inner container">
-          <div class="hero__content">
-            <h1 class="hero__title">
-              Tu sitio web que impulsa el crecimiento de tu negocio
-            </h1>
-            <p class="hero__subtitle">
-              Diseñamos landing pages estratégicas, rápidas y optimizadas para
-              convertir visitantes en clientes reales.
-            </p>
-
-            <div class="hero__actions">
-              <a class="button button--primary" href="#contacto"
-                >Contactarnos</a
-              >
-              <a class="button button--ghost" href="#paquetes">Ver paquetes</a>
-            </div>
-
-            <!-- Microcopy / confianza -->
-            <ul class="hero__micro">
-              <li>Entrega rápida — lanzamiento en 7–14 días</li>
-              <li>Optimización para campañas publicitarias</li>
-              <li>Soporte y mantenimiento opcional</li>
-            </ul>
-          </div>
-
-          <figure class="hero__visual" aria-hidden="true">
-            <!-- reemplaza con imagen / mockup -->
-            <img src="hero-mockup.jpg" alt="" />
-          </figure>
-        </div>
-      </section>
-
+      <div id="hero"></div>
       <main class="main" role="main">
         <!-- ===== PROBLEM / WHY ===== -->
         <section class="problem container" id="por-que">
@@ -165,129 +133,9 @@
         </section>
 
         <!-- ===== BENEFITS / FEATURES ===== -->
-        <section
-          class="benefits"
-          id="beneficios"
-          role="region"
-          aria-label="Beneficios"
-        >
-          <div class="container">
-            <header class="section-header">
-              <h2 class="section-header__title">Ventajas que vas a obtener</h2>
-              <p class="section-header__subtitle">
-                Nuestras landing pages están diseñadas para maximizar
-                resultados.
-              </p>
-            </header>
-
-            <ul class="benefits__list">
-              <li class="benefits__item">
-                <strong>Conversiones optimizadas</strong>
-                <span
-                  >Copy, UX y estructura pensada para que el usuario realice la
-                  acción (lead, compra o reserva).</span
-                >
-              </li>
-              <li class="benefits__item">
-                <strong>Velocidad y rendimiento</strong>
-                <span>Tiempo de carga reducido y prácticas para buen SEO.</span>
-              </li>
-              <li class="benefits__item">
-                <strong>Compatibilidad móvil</strong>
-                <span
-                  >Diseño responsive que convierte en cualquier
-                  dispositivo.</span
-                >
-              </li>
-              <li class="benefits__item">
-                <strong>Integraciones</strong>
-                <span
-                  >Formularios, CRM, email marketing, pixels de conversión y
-                  más.</span
-                >
-              </li>
-            </ul>
-          </div>
-        </section>
-
+        <div id="benefits"></div>
         <!-- ===== PAQUETES ===== -->
-        <section
-          class="packages"
-          id="paquetes"
-          role="region"
-          aria-label="Paquetes"
-        >
-          <div class="container">
-            <header class="section-header">
-              <h2 class="section-header__title">Paquetes</h2>
-              <p class="section-header__subtitle">
-                Planes pensados para diferentes necesidades y presupuestos.
-              </p>
-            </header>
-
-            <div class="packages__grid" role="list">
-              <article
-                class="package package--starter"
-                role="listitem"
-                aria-labelledby="pkg-starter"
-              >
-                <h3 id="pkg-starter" class="package__title">Starter</h3>
-                <p class="package__price">MXN 5,500*</p>
-                <ul class="package__features">
-                  <li>Landing page 1 sección</li>
-                  <li>Formulario de contacto</li>
-                  <li>Optimización básica</li>
-                  <li>Entrega 7 días</li>
-                </ul>
-                <a class="button button--outline package__cta" href="#contacto"
-                  >Solicitar Starter</a
-                >
-              </article>
-
-              <article
-                class="package package--growth"
-                role="listitem"
-                aria-labelledby="pkg-growth"
-              >
-                <h3 id="pkg-growth" class="package__title">Growth</h3>
-                <p class="package__price">MXN 12,500*</p>
-                <ul class="package__features">
-                  <li>Landing multi-sección</li>
-                  <li>Integración con CRM / Email</li>
-                  <li>Optimización SEO básica</li>
-                  <li>Entrega 10–14 días</li>
-                </ul>
-                <a class="button button--primary package__cta" href="#contacto"
-                  >Solicitar Growth</a
-                >
-              </article>
-
-              <article
-                class="package package--premium"
-                role="listitem"
-                aria-labelledby="pkg-premium"
-              >
-                <h3 id="pkg-premium" class="package__title">Premium</h3>
-                <p class="package__price">MXN 28,000*</p>
-                <ul class="package__features">
-                  <li>Landing + A/B testing</li>
-                  <li>Campaña inicial recomendada</li>
-                  <li>Soporte y mantenimiento 1 mes</li>
-                  <li>Entrega 14–21 días</li>
-                </ul>
-                <a class="button button--primary package__cta" href="#contacto"
-                  >Solicitar Premium</a
-                >
-              </article>
-            </div>
-
-            <p class="packages__note">
-              *Precios referenciales. Cotizaciones personalizadas según alcance
-              del proyecto.
-            </p>
-          </div>
-        </section>
-
+        <div id="packages"></div>
         <!-- ===== PROCESO ===== -->
         <section
           class="process"
@@ -331,44 +179,6 @@
                 </p>
               </li>
             </ol>
-          </div>
-        </section>
-
-        <!-- ===== TESTIMONIOS ===== -->
-        <section
-          class="testimonials"
-          id="testimonios"
-          role="region"
-          aria-label="Testimonios"
-        >
-          <div class="container">
-            <header class="section-header">
-              <h2 class="section-header__title">
-                Lo que dicen nuestros clientes
-              </h2>
-            </header>
-
-            <ul class="testimonials__list">
-              <li class="testimonial">
-                <blockquote class="testimonial__quote">
-                  "La landing que nos entregaron duplicó nuestros leads en el
-                  primer mes."
-                </blockquote>
-                <p class="testimonial__meta">
-                  — María López, <span>Clinica Salud+</span>
-                </p>
-              </li>
-
-              <li class="testimonial">
-                <blockquote class="testimonial__quote">
-                  "Excelente comunicación y resultados medibles desde la semana
-                  2."
-                </blockquote>
-                <p class="testimonial__meta">
-                  — Juan Pérez, <span>Taller AutoPro</span>
-                </p>
-              </li>
-            </ul>
           </div>
         </section>
 
@@ -417,82 +227,7 @@
       </main>
 
       <!-- ===== CONTACT / FORM ===== -->
-      <section
-        class="contact container"
-        id="contacto"
-        role="region"
-        aria-label="Contacto"
-      >
-        <header class="section-header">
-          <h2 class="section-header__title">Agenda tu asesoría gratuita</h2>
-          <p class="section-header__subtitle">
-            Completa el formulario y nos pondremos en contacto en 24–48 horas
-            hábiles.
-          </p>
-        </header>
-
-        <form class="form" action="/enviar-solicitud" method="post" novalidate>
-          <div class="form__row">
-            <label class="form__label" for="name">Nombre completo</label>
-            <input
-              id="name"
-              name="name"
-              class="form__input"
-              type="text"
-              placeholder="Tu nombre"
-              required
-            />
-          </div>
-
-          <div class="form__row">
-            <label class="form__label" for="email">Correo electrónico</label>
-            <input
-              id="email"
-              name="email"
-              class="form__input"
-              type="email"
-              placeholder="tu@correo.com"
-              required
-            />
-          </div>
-
-          <div class="form__row">
-            <label class="form__label" for="company">Empresa (opcional)</label>
-            <input
-              id="company"
-              name="company"
-              class="form__input"
-              type="text"
-              placeholder="Nombre de la empresa"
-            />
-          </div>
-
-          <div class="form__row">
-            <label class="form__label" for="message"
-              >Cuéntanos sobre tu proyecto</label
-            >
-            <textarea
-              id="message"
-              name="message"
-              class="form__textarea"
-              rows="5"
-              placeholder="¿Qué necesitas?"
-            ></textarea>
-          </div>
-
-          <div class="form__actions">
-            <button class="button button--primary" type="submit">
-              Enviar solicitud
-            </button>
-            <p class="form__privacy">
-              Al enviar aceptas que tratemos tus datos para gestionar la
-              solicitud.
-              <a href="/politica-privacidad">Política de privacidad</a>.
-            </p>
-          </div>
-        </form>
-      </section>
-
+      <div id="form"></div>
       <!-- ===== FOOTER ===== -->
       <div id="footer"></div>
     </div>

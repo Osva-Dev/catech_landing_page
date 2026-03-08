@@ -20,6 +20,18 @@ const components = [
     id: "features",
   },
   {
+    path: "components/benefits/benefits.html",
+    id: "benefits",
+  },
+  {
+    path: "components/packages/packages.html",
+    id: "packages",
+  },
+  {
+    path: "components/form/form.html",
+    id: "form",
+  },
+  {
     path: "components/footer/footer.html",
     id: "footer",
   },

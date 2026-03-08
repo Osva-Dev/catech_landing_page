@@ -1,0 +1,42 @@
+/* ============================= */
+/* PACKAGES */
+/* ============================= */
+
+.packages__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.package {
+  background: #111;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.package__title {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.package__price {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.package__features {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.package__features li {
+  margin-bottom: 8px;
+}
+
+.packages__note {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #999;
+}

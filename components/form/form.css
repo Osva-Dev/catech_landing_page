@@ -1,0 +1,37 @@
+/* ============================= */
+/* FORM */
+/* ============================= */
+
+.form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form__row {
+  margin-bottom: 20px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form__input,
+.form__textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #0f0f0f;
+  color: white;
+}
+
+.form__actions {
+  margin-top: 25px;
+}
+
+.form__privacy {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #999;
+}
