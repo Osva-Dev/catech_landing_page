@@ -1,3 +1,5 @@
+@import url(/components/navbar/navbar.css);
+
 /* ============================= */
 /* RESET */
 /* ============================= */
@@ -95,54 +97,6 @@ section {
 
 .button--outline {
   border: 1px solid white;
-  color: white;
-}
-
-/* ============================= */
-/* HEADER */
-/* ============================= */
-
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: #0b0b0b;
-  border-bottom: 1px solid #1a1a1a;
-}
-
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.logo__image {
-  width: 40px;
-}
-
-.nav__list {
-  display: flex;
-  gap: 25px;
-  list-style: none;
-}
-
-.nav__link {
-  text-decoration: none;
-  color: #ccc;
-  font-size: 0.95rem;
-}
-
-.nav__link:hover {
   color: white;
 }
 
