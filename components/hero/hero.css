@@ -24,13 +24,3 @@
   gap: 15px;
   margin-bottom: 30px;
 }
-
-.hero__micro {
-  list-style: none;
-  font-size: 0.9rem;
-  color: #999;
-}
-
-.hero__micro li {
-  margin-bottom: 6px;
-}
