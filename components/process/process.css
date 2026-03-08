@@ -1,0 +1,16 @@
+.process__steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  list-style: none;
+}
+
+.process__step {
+  background: #111;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.process__step-title {
+  margin-bottom: 10px;
+}

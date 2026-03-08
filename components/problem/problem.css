@@ -1,0 +1,16 @@
+.problem__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.problem__item {
+  background: #111;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.problem__item-title {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}

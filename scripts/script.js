@@ -16,6 +16,14 @@ const components = [
     id: "hero",
   },
   {
+    path: "components/problem/problem.html",
+    id: "problem",
+  },
+  {
+    path: "components/comparison/comparison.html",
+    id: "comparison",
+  },
+  {
     path: "components/features/features.html",
     id: "features",
   },
@@ -26,6 +34,14 @@ const components = [
   {
     path: "components/packages/packages.html",
     id: "packages",
+  },
+  {
+    path: "components/process/process.html",
+    id: "process",
+  },
+  {
+    path: "components/faq/faq.html",
+    id: "faq",
   },
   {
     path: "components/form/form.html",

@@ -1,0 +1,9 @@
+.faq__item {
+  border-bottom: 1px solid #222;
+  padding: 15px 0;
+}
+
+.faq__question {
+  cursor: pointer;
+  font-weight: bold;
+}

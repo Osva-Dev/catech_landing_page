@@ -1,0 +1,24 @@
+.comparison {
+  margin-top: 60px;
+}
+
+.comparison__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.comparison__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison__table th,
+.comparison__table td {
+  border: 1px solid #222;
+  padding: 12px;
+  text-align: left;
+}
+
+.comparison__table th {
+  background: #111;
+}
