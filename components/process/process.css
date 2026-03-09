@@ -1,3 +1,22 @@
+/* ============================= */
+/* PROCESS */
+/* ============================= */
+
+.process {
+  padding: 100px 0;
+  background: #f7f9fa;
+}
+
+.section-header__title {
+  color: black;
+}
+
+.section-header__subtitle {
+  color: black;
+}
+
+/* grid */
+
 .process__steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -5,12 +24,65 @@
   list-style: none;
 }
 
+/* step card */
+
 .process__step {
-  background: #111;
+  background: #ffffff;
   padding: 30px;
-  border-radius: 8px;
+  border-radius: 14px;
+  border: 1px solid #e6f4f2;
+  transition: all 0.25s ease;
+  position: relative;
 }
 
+/* hover */
+
+.process__step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
+}
+
+/* number badge */
+
+.process__step::before {
+  content: counter(step);
+  counter-increment: step;
+  position: absolute;
+  top: -14px;
+  left: 20px;
+
+  background: #056a64;
+  color: white;
+
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* reset counter */
+
+.process__steps {
+  counter-reset: step;
+}
+
+/* title */
+
 .process__step-title {
+  color: #0b2a2a;
   margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* text */
+
+.process__step-desc {
+  color: #334e4e;
+  line-height: 1.6;
 }

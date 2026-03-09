@@ -1,6 +1,13 @@
+/* ============================= */
+/* BENEFITS */
+/* ============================= */
+
 .benefits {
-  background: #0f0f0f;
+  padding: 100px 0;
+  background: #f7f9fa;
 }
+
+/* grid */
 
 .benefits__list {
   display: grid;
@@ -9,8 +16,44 @@
   list-style: none;
 }
 
+/* card */
+
 .benefits__item {
-  background: #111;
+  background: #ffffff;
   padding: 30px;
-  border-radius: 8px;
+  border-radius: 14px;
+  border: 1px solid #e6f4f2;
+  transition: all 0.25s ease;
+}
+
+/* hover */
+
+.benefits__item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
+}
+
+/* titulo */
+
+.benefits__item strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #0b2a2a;
+  margin-bottom: 10px;
+}
+
+/* texto */
+
+.benefits__item span {
+  color: #334e4e;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* check icon */
+
+.benefits__item span::before {
+  content: "✓";
+  color: #056a64;
+  margin-right: 8px;
 }

@@ -6,8 +6,8 @@ body {
     "Segoe UI",
     Roboto;
   line-height: 1.6;
-  color: #ffffff;
-  background: #0b0b0b;
+  color: #000000;
+  background: #f7f9fa;
 }
 
 .page {
@@ -50,7 +50,7 @@ section {
 }
 
 .section-header__subtitle {
-  color: #aaa;
+  color: #000000;
   max-width: 600px;
   margin: auto;
 }
@@ -69,7 +69,7 @@ section {
 }
 
 .button--primary {
-  background: white;
+  background: #056a64;
   color: black;
 }
 
@@ -79,7 +79,8 @@ section {
 
 .button--ghost {
   border: 1px solid white;
-  color: white;
+  color: rgb(255, 255, 255);
+  background-color: #0b2a2a;
 }
 
 .button--ghost:hover {

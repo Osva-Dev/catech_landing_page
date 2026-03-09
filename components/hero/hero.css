@@ -15,7 +15,8 @@
 }
 
 .hero__subtitle {
-  color: #bbb;
+  color: #000000;
+  font-size: 20px;
   margin-bottom: 30px;
 }
 

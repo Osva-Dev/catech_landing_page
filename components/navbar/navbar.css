@@ -2,15 +2,15 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: #0b0b0b;
-  border-bottom: 1px solid #1a1a1a;
+  background: #ffffff;
+  border-bottom: 1px solid #e6f4f2;
 }
 
 .navbar__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 18px 0;
 }
 
 .logo {
@@ -18,26 +18,42 @@
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: white;
-  font-weight: bold;
 }
 
 .logo__image {
-  width: 40px;
+  width: 55px;
+  height: 55px;
 }
+
+/* NAV */
 
 .nav__list {
   display: flex;
-  gap: 25px;
+  gap: 28px;
   list-style: none;
 }
 
 .nav__link {
   text-decoration: none;
-  color: #ccc;
+  color: #000000;
   font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.25s ease;
 }
 
 .nav__link:hover {
+  color: #056a64;
+}
+
+/* BOTÓN CTA */
+
+.button--primary {
+  background: #056a64;
   color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
 }

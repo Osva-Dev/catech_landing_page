@@ -1,16 +1,57 @@
+/* ============================= */
+/* PROBLEM */
+/* ============================= */
+
+.problem {
+  padding: 100px 0;
+}
+
+/* header */
+
+.section-header__title {
+  color: #ffffff;
+}
+
+.section-header__subtitle {
+  color: #ffffff;
+}
+
+/* grid */
+
 .problem__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
+/* card */
+
 .problem__item {
-  background: #111;
+  background: #ffffff;
   padding: 30px;
-  border-radius: 8px;
+  border-radius: 14px;
+  border: 1px solid #e6f4f2;
+  transition: all 0.25s ease;
 }
 
+/* hover */
+
+.problem__item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
+}
+
+/* titulo */
+
 .problem__item-title {
+  color: #0b2a2a;
   margin-bottom: 10px;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
+}
+
+/* texto */
+
+.problem__item-text {
+  color: #334e4e;
+  line-height: 1.6;
 }

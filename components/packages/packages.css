@@ -2,41 +2,95 @@
 /* PACKAGES */
 /* ============================= */
 
+.packages {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
 .packages__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 35px;
 }
 
+/* card */
+
 .package {
-  background: #111;
+  background: #ffffff;
   padding: 40px;
-  border-radius: 10px;
+  border-radius: 14px;
+  border: 1px solid #e6f4f2;
   text-align: center;
+  transition: all 0.25s ease;
 }
+
+/* hover */
+
+.package:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
+}
+
+/* titulo */
 
 .package__title {
   font-size: 1.4rem;
   margin-bottom: 10px;
+  color: #0b2a2a;
 }
 
+/* precio */
+
 .package__price {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 25px;
+  color: #056a64;
 }
+
+/* features */
 
 .package__features {
   list-style: none;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  text-align: left;
 }
 
 .package__features li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  color: #334e4e;
+  position: relative;
+  padding-left: 20px;
 }
+
+/* check icon */
+
+.package__features li::before {
+  content: "✓";
+  color: #056a64;
+  position: absolute;
+  left: 0;
+}
+
+/* CTA */
+
+.package__cta {
+  display: inline-block;
+  width: 100%;
+}
+
+/* destacar plan growth */
+
+.package--growth {
+  border: 2px solid #056a64;
+  transform: scale(1.05);
+}
+
+/* nota */
 
 .packages__note {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 30px;
   font-size: 0.9rem;
-  color: #999;
+  color: #6b8a8a;
 }

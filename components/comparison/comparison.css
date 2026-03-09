@@ -1,24 +1,72 @@
+/* ============================= */
+/* COMPARISON */
+/* ============================= */
+
 .comparison {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .comparison__title {
-  margin-bottom: 20px;
   text-align: center;
+  margin-bottom: 40px;
+  color: #0b2a2a;
 }
 
-.comparison__table {
-  width: 100%;
-  border-collapse: collapse;
+/* grid */
+
+.comparison__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
-.comparison__table th,
-.comparison__table td {
-  border: 1px solid #222;
-  padding: 12px;
-  text-align: left;
+/* card */
+
+.comparison__card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid #e6f4f2;
+  transition: all 0.25s ease;
 }
 
-.comparison__table th {
-  background: #111;
+.comparison__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
+}
+
+/* destacar tu landing */
+
+.comparison__card--highlight {
+  border: 2px solid #056a64;
+}
+
+/* titulo */
+
+.comparison__card-title {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #0b2a2a;
+}
+
+/* lista */
+
+.comparison__list {
+  list-style: none;
+}
+
+.comparison__list li {
+  margin-bottom: 10px;
+  color: #334e4e;
+  padding-left: 18px;
+  position: relative;
+}
+
+/* check icon */
+
+.comparison__list li::before {
+  content: "✓";
+  color: #056a64;
+  position: absolute;
+  left: 0;
 }
