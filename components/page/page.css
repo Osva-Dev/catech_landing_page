@@ -17,10 +17,6 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .hero__inner {
-    grid-template-columns: 1fr;
-  }
-
   .problem__grid,
   .benefits__list,
   .process__steps {
