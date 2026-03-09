@@ -11,7 +11,7 @@
     </p>
   </header>
 
-  <form class="form" action="/enviar-solicitud" method="post" novalidate>
+  <form id="contact-form" class="form" novalidate>
     <div class="form__row">
       <label class="form__label" for="name">Nombre completo</label>
       <input
@@ -48,9 +48,9 @@
     </div>
 
     <div class="form__row">
-      <label class="form__label" for="message"
-        >Cuéntanos sobre tu proyecto</label
-      >
+      <label class="form__label" for="message">
+        Cuéntanos sobre tu proyecto
+      </label>
       <textarea
         id="message"
         name="message"
@@ -64,6 +64,7 @@
       <button class="button button--primary" type="submit">
         Enviar solicitud
       </button>
+
       <p class="form__privacy">
         Al enviar aceptas que tratemos tus datos para gestionar la solicitud.
         <a href="/politica-privacidad">Política de privacidad</a>.
