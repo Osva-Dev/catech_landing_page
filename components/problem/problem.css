@@ -1,12 +1,6 @@
-/* ============================= */
-/* PROBLEM */
-/* ============================= */
-
 .problem {
   padding: 100px 0;
 }
-
-/* header */
 
 .section-header__title {
   color: #ffffff;
@@ -16,15 +10,11 @@
   color: #ffffff;
 }
 
-/* grid */
-
 .problem__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
-
-/* card */
 
 .problem__item {
   background: #ffffff;

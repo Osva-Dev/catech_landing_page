@@ -8,8 +8,8 @@ async function loadComponent(path, elementId) {
 
 const components = [
   {
-    path: "components/navbar/navbar.html",
-    id: "navbar",
+    path: "components/header/header.html",
+    id: "header",
   },
   {
     path: "components/hero/hero.html",

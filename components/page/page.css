@@ -1,101 +1,20 @@
 body {
+  background-color: #f7f9fa;
+  margin: 0;
+}
+.page {
+  margin: auto;
   font-family:
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     Roboto;
-  line-height: 1.6;
+  line-height: 1.4;
   color: #000000;
   background: #f7f9fa;
-}
-
-.page {
   overflow-x: hidden;
 }
-/* ============================= */
-/* RESET */
-/* ============================= */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* ============================= */
-/* GLOBAL */
-/* ============================= */
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-section {
-  padding: 90px 0;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.section-header__title {
-  font-size: 2.4rem;
-  margin-bottom: 15px;
-}
-
-.section-header__subtitle {
-  color: #000000;
-  max-width: 600px;
-  margin: auto;
-}
-
-/* ============================= */
-/* BUTTONS */
-/* ============================= */
-
-.button {
-  display: inline-block;
-  padding: 14px 26px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.25s;
-}
-
-.button--primary {
-  background: #056a64;
-  color: black;
-}
-
-.button--primary:hover {
-  background: #eaeaea;
-}
-
-.button--ghost {
-  border: 1px solid white;
-  color: rgb(255, 255, 255);
-  background-color: #0b2a2a;
-}
-
-.button--ghost:hover {
-  background: white;
-  color: black;
-}
-
-.button--outline {
-  border: 1px solid white;
-  color: white;
-}
-
-/* ============================= */
-/* RESPONSIVE */
-/* ============================= */
 
 @media (max-width: 1024px) {
   .hero__inner {
