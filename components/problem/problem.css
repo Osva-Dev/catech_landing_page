@@ -1,12 +1,24 @@
 .problem {
   padding: 100px 0;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.section-header {
+  display: flex;
 }
 
 .section-header__title {
   color: #ffffff;
+  text-align: center;
 }
 
 .section-header__subtitle {
+  text-align: center;
   color: #ffffff;
 }
 
@@ -24,22 +36,16 @@
   transition: all 0.25s ease;
 }
 
-/* hover */
-
 .problem__item:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
 }
-
-/* titulo */
 
 .problem__item-title {
   color: #0b2a2a;
   margin-bottom: 10px;
   font-size: 1.15rem;
 }
-
-/* texto */
 
 .problem__item-text {
   color: #334e4e;
