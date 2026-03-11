@@ -1,13 +1,16 @@
-/* ============================= */
-/* BENEFITS */
-/* ============================= */
-
 .benefits {
   padding: 100px 0;
   background: #f7f9fa;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
 }
 
-/* grid */
+.benefits__header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
 .benefits__list {
   display: grid;
@@ -15,8 +18,6 @@
   gap: 30px;
   list-style: none;
 }
-
-/* card */
 
 .benefits__item {
   background: #ffffff;
@@ -26,14 +27,10 @@
   transition: all 0.25s ease;
 }
 
-/* hover */
-
 .benefits__item:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
 }
-
-/* titulo */
 
 .benefits__item strong {
   display: block;
@@ -42,15 +39,11 @@
   margin-bottom: 10px;
 }
 
-/* texto */
-
 .benefits__item span {
   color: #334e4e;
   line-height: 1.6;
   font-size: 0.95rem;
 }
-
-/* check icon */
 
 .benefits__item span::before {
   content: "✓";
