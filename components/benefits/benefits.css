@@ -1,5 +1,4 @@
 .benefits {
-  padding: 100px 0;
   background: #f7f9fa;
   max-width: 1200px;
   margin: 100px auto;
@@ -15,6 +14,9 @@
 .benefits__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  padding: 0;
+
   gap: 30px;
   list-style: none;
 }
@@ -43,10 +45,4 @@
   color: #334e4e;
   line-height: 1.6;
   font-size: 0.95rem;
-}
-
-.benefits__item span::before {
-  content: "✓";
-  color: #056a64;
-  margin-right: 8px;
 }
