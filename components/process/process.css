@@ -1,10 +1,7 @@
-/* ============================= */
-/* PROCESS */
-/* ============================= */
-
 .process {
-  padding: 100px 0;
-  background: #f7f9fa;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
 }
 
 .section-header__title {
@@ -14,17 +11,12 @@
 .section-header__subtitle {
   color: black;
 }
-
-/* grid */
-
 .process__steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   list-style: none;
 }
-
-/* step card */
 
 .process__step {
   background: #ffffff;
@@ -66,21 +58,15 @@
   font-weight: 600;
 }
 
-/* reset counter */
-
 .process__steps {
   counter-reset: step;
 }
-
-/* title */
 
 .process__step-title {
   color: #0b2a2a;
   margin-bottom: 10px;
   font-size: 1.1rem;
 }
-
-/* text */
 
 .process__step-desc {
   color: #334e4e;

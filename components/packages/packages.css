@@ -1,7 +1,3 @@
-/* ============================= */
-/* PACKAGES */
-/* ============================= */
-
 .packages {
   background: #ffffff;
 }
@@ -19,8 +15,6 @@
   gap: 35px;
 }
 
-/* card */
-
 .package {
   display: flex;
   align-items: center;
@@ -33,14 +27,10 @@
   transition: all 0.25s ease;
 }
 
-/* hover */
-
 .package:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
 }
-
-/* titulo */
 
 .package__title {
   font-size: 1.4rem;
