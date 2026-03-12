@@ -8,10 +8,6 @@
   gap: 60px;
 }
 
-.section-header {
-  display: flex;
-}
-
 .section-header__title {
   color: #ffffff;
   text-align: center;
