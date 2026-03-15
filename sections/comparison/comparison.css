@@ -1,25 +1,26 @@
 .comparison {
   margin-top: 80px;
+  height: 800px;
+  background-color: #191919;
+}
+
+.comparison__container {
+  background-color: #191919;
   max-width: 1200px;
   margin: 100px auto;
   padding: 0 20px;
 }
-
 .comparison__title {
-  text-align: center;
+  margin: 0;
   margin-bottom: 40px;
-  color: #0b2a2a;
-}
-
+  color: #ffffff;
+} /* FLEX CONTAINER */
 .comparison__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
-
-/* card */
-
+  display: flex;
+  gap: 20px;
+} /* card */
 .comparison__card {
+  flex: 1;
   background: #ffffff;
   padding: 30px;
   border-radius: 14px;
@@ -27,18 +28,9 @@
   transition: all 0.25s ease;
 }
 
-.comparison__card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
-}
-
-/* destacar tu landing */
-
 .comparison__card--highlight {
-  border: 2px solid #056a64;
+  background-color: #b8e9c8;
 }
-
-/* titulo */
 
 .comparison__card-title {
   margin-bottom: 15px;
@@ -46,24 +38,22 @@
   color: #0b2a2a;
 }
 
-/* lista */
-
 .comparison__list {
   list-style: none;
+  margin: 0;
+
+  padding: 0;
 }
 
-.comparison__list li {
-  margin-bottom: 10px;
-  color: #334e4e;
-  padding-left: 18px;
-  position: relative;
+.comparison__li {
+  margin-top: 10px;
+  font-weight: 400;
 }
 
-/* check icon */
+.li-ghost {
+  color: #d1d0d0;
+}
 
-.comparison__list li::before {
-  content: "✓";
-  color: #056a64;
-  position: absolute;
-  left: 0;
+.li-good {
+  color: black;
 }
