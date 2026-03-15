@@ -1,11 +1,13 @@
-@import url(../components/page/page.css);
-@import url(../components/header/header.css);
-@import url(../components/hero/hero.css);
-@import url(../components/problem/problem.css);
-@import url(../components/benefits/benefits.css);
-@import url(../components/comparison/comparison.css);
-@import url(../components/packages/packages.css);
-@import url(../components/process/process.css);
-@import url(../components/faq/faq.css);
-@import url(../components/form/form.css);
-@import url(../components/footer/footer.css);
+@import url(../sections/page/page.css);
+@import url(../sections/header/header.css);
+@import url(../sections/hero/hero.css);
+@import url(../sections/problem/problem.css);
+@import url(../sections/benefits/benefits.css);
+@import url(../sections/comparison/comparison.css);
+@import url(../sections/packages/packages.css);
+@import url(../sections/process/process.css);
+@import url(../sections/faq/faq.css);
+@import url(../sections/form/form.css);
+@import url(../sections/footer/footer.css);
+
+@import url(../components/button/button.css);

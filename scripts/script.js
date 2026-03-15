@@ -6,53 +6,53 @@ async function loadComponent(path, elementId) {
   document.getElementById(elementId).innerHTML = html;
 }
 
-const components = [
+const sections = [
   {
-    path: "components/header/header.html",
+    path: "sections/header/header.html",
     id: "header",
   },
   {
-    path: "components/hero/hero.html",
+    path: "sections/hero/hero.html",
     id: "hero",
   },
   {
-    path: "components/problem/problem.html",
+    path: "sections/problem/problem.html",
     id: "problem",
   },
   {
-    path: "components/comparison/comparison.html",
+    path: "sections/comparison/comparison.html",
     id: "comparison",
   },
   {
-    path: "components/features/features.html",
+    path: "sections/features/features.html",
     id: "features",
   },
   {
-    path: "components/benefits/benefits.html",
+    path: "sections/benefits/benefits.html",
     id: "benefits",
   },
   {
-    path: "components/packages/packages.html",
+    path: "sections/packages/packages.html",
     id: "packages",
   },
   {
-    path: "components/process/process.html",
+    path: "sections/process/process.html",
     id: "process",
   },
   {
-    path: "components/faq/faq.html",
+    path: "sections/faq/faq.html",
     id: "faq",
   },
   {
-    path: "components/form/form.html",
+    path: "sections/form/form.html",
     id: "form",
   },
   {
-    path: "components/footer/footer.html",
+    path: "sections/footer/footer.html",
     id: "footer",
   },
 ];
 
-components.forEach((component) => {
+sections.forEach((component) => {
   loadComponent(component.path, component.id);
 });
