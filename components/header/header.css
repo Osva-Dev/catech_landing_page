@@ -4,49 +4,36 @@
   z-index: 100;
   background: #ffffff;
   border-bottom: 1px solid #e6f4f2;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 280px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
+.header__logo-image {
+  width: 70px;
+  height: 70px;
 }
 
-.logo__image {
-  width: 55px;
-  height: 55px;
-}
-
-.nav__list {
+.header__nav-list {
   display: flex;
   gap: 28px;
   list-style: none;
 }
 
-.nav__link {
+.header__nav-link {
   text-decoration: none;
-  color: #000000;
-  font-size: 1.2rem;
+  color: #000;
+  font-size: 1.4rem;
   font-weight: 500;
   transition: color 0.25s ease;
 }
 
-.nav__link:hover {
+.header__nav-link:hover {
   color: #056a64;
-}
-
-.button {
-  background: #056a64;
-  color: white;
-  padding: 10px 18px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 600;
-  transition: all 0.25s ease;
 }
