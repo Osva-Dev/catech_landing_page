@@ -1,74 +1,46 @@
-<section
-  class="contact__container"
-  id="contacto"
-  role="region"
-  aria-label="Contacto"
->
-  <header class="section-header">
-    <h2 class="section-header__title">Agenda tu asesoría gratuita</h2>
-    <p class="section-header__subtitle">
-      Completa el formulario y nos pondremos en contacto en 24–48 horas hábiles.
-    </p>
-  </header>
+<section class="contact" id="contacto">
+  <div class="contact__wrapper">
+    <div class="contact__content">
+      <h2 class="contact__title">
+        Comienza tu proyecto digital,<br />
+        <strong>agenda una consulta gratuita</strong>
+      </h2>
 
-  <form id="contact-form" class="form" novalidate>
-    <div class="form__row">
-      <label class="form__label" for="name">Nombre completo</label>
+      <div class="contact__paragraph">
+        <p>La oportunidad de crecer tu negocio está en este formulario.</p>
+      </div>
+    </div>
+
+    <form id="contact-form" class="contact__form">
       <input
-        id="name"
+        type="text"
         name="name"
-        class="form__input"
-        type="text"
-        placeholder="Tu nombre"
+        placeholder="Nombre completo"
         required
-      />
-    </div>
-
-    <div class="form__row">
-      <label class="form__label" for="email">Correo electrónico</label>
-      <input
-        id="email"
-        name="email"
         class="form__input"
+      />
+
+      <input
         type="email"
-        placeholder="tu@correo.com"
+        name="email"
+        placeholder="Correo electrónico"
         required
-      />
-    </div>
-
-    <div class="form__row">
-      <label class="form__label" for="company">Empresa (opcional)</label>
-      <input
-        id="company"
-        name="company"
         class="form__input"
-        type="text"
-        placeholder="Nombre de la empresa"
       />
-    </div>
 
-    <div class="form__row">
-      <label class="form__label" for="message">
-        Cuéntanos sobre tu proyecto
-      </label>
-      <textarea
-        id="message"
-        name="message"
-        class="form__textarea"
-        rows="5"
-        placeholder="¿Qué necesitas?"
-      ></textarea>
-    </div>
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Número telefónico"
+        class="form__input"
+      />
 
-    <div class="form__actions">
-      <button class="button button--primary" type="submit">
-        Enviar solicitud
-      </button>
+      <button type="submit" class="form__button">Continuar</button>
 
       <p class="form__privacy">
-        Al enviar aceptas que tratemos tus datos para gestionar la solicitud.
-        <a href="/politica-privacidad">Política de privacidad</a>.
+        Tus datos serán utilizados únicamente para contactarte sobre tu
+        solicitud.
       </p>
-    </div>
-  </form>
+    </form>
+  </div>
 </section>
