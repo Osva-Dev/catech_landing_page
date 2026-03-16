@@ -4,6 +4,8 @@
   padding: 0 20px;
 }
 
+/* header */
+
 .section-header__title {
   color: black;
 }
@@ -11,18 +13,31 @@
 .section-header__subtitle {
   color: black;
 }
+
+/* container de cards */
+
 .process__steps {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   gap: 30px;
   list-style: none;
+  padding: 0;
+  margin-top: 50px;
+
+  counter-reset: step;
+  align-items: stretch;
 }
 
+/* card */
+
 .process__step {
+  flex: 1 1 calc(25% - 30px);
+
   background: #ffffff;
   padding: 30px;
+
   border-radius: 14px;
   border: 1px solid #e6f4f2;
+
   transition: all 0.25s ease;
   position: relative;
 }
@@ -39,6 +54,7 @@
 .process__step::before {
   content: counter(step);
   counter-increment: step;
+
   position: absolute;
   top: -14px;
   left: 20px;
@@ -58,15 +74,15 @@
   font-weight: 600;
 }
 
-.process__steps {
-  counter-reset: step;
-}
+/* title */
 
 .process__step-title {
   color: #0b2a2a;
   margin-bottom: 10px;
   font-size: 1.1rem;
 }
+
+/* description */
 
 .process__step-desc {
   color: #334e4e;
