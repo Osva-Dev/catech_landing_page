@@ -1,29 +1,56 @@
 .packages {
-  background: #ffffff;
+  background: #ffffff00;
 }
 
 .packages__container {
-  background-color: #ffffff;
   max-width: 1200px;
   margin: 100px auto;
   padding: 0 20px;
 }
 
+/* HEADER */
+
+.packages__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.packages__title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0b2a2a;
+}
+
+.packages__subtitle {
+  color: #5a7474;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* GRID */
+
 .packages__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 35px;
 }
 
+/* CARD */
+
 .package {
+  flex: 1 1 320px;
+
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+
   background: #ffffff;
   padding: 40px;
-  border-radius: 14px;
+
+  border-radius: 16px;
   border: 1px solid #e6f4f2;
+
   text-align: center;
+
   transition: all 0.25s ease;
 }
 
@@ -32,69 +59,102 @@
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
 }
 
+/* TITLE */
+
 .package__title {
   font-size: 1.4rem;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #0b2a2a;
-  text-align: center;
 }
 
-.package__subtitle {
-  text-align: center;
+/* TAGLINE */
+
+.package__tagline {
+  font-size: 0.9rem;
+  color: #6b8a8a;
+  margin-bottom: 20px;
+  max-width: 260px;
 }
 
-/* precio */
+/* PRICE */
 
 .package__price {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 25px;
   color: #056a64;
+  margin-bottom: 25px;
 }
 
-/* features */
+/* FEATURES */
 
 .package__features {
   list-style: none;
+  padding: 0;
   margin-bottom: 30px;
   text-align: left;
-}
-
-.package__features li {
-  margin-bottom: 10px;
-  color: #334e4e;
-  position: relative;
-  padding-left: 20px;
-}
-
-/* check icon */
-
-.package__features li::before {
-  content: "✓";
-  color: #056a64;
-  position: absolute;
-  left: 0;
-}
-
-/* CTA */
-
-.package__cta {
-  display: inline-block;
   width: 100%;
 }
 
-/* destacar plan growth */
-
-.package--growth {
-  border: 2px solid #056a64;
-  transform: scale(1.05);
+.package__features li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  color: #334e4e;
+  line-height: 1.5;
 }
 
-/* nota */
+/* CHECK ICON */
+
+.package__features li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #2e9c6a;
+  font-weight: 700;
+}
+
+/* CTA BUTTON */
+
+.package__cta {
+  display: inline-block;
+  width: 80%;
+  padding: 12px 20px;
+
+  background: #056a64;
+  color: white;
+  text-decoration: none;
+
+  border-radius: 8px;
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.package__cta:hover {
+  background: #044f4a;
+}
+
+/* POPULAR PLAN */
+
+/* BADGE */
+
+.package__badge {
+  background: #056a64;
+  color: white;
+
+  font-size: 0.75rem;
+
+  padding: 4px 12px;
+  border-radius: 20px;
+
+  margin-bottom: 10px;
+}
+
+/* NOTE */
 
 .packages__note {
   text-align: center;
-  margin-top: 30px;
-  font-size: 0.9rem;
+  margin-top: 40px;
+  font-size: 0.85rem;
   color: #6b8a8a;
 }
