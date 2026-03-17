@@ -17,14 +17,15 @@
 .hero__title {
   margin: 0;
   margin-top: 40px;
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   line-height: 1.2;
+  font-weight: 500;
 }
 
 .hero__subtitle {
   margin-top: 24px;
-  font-size: 1.6rem;
-  color: #333;
+  font-size: 1.5rem;
+  color: #474747;
 }
 
 .hero__actions {
@@ -55,12 +56,12 @@
 }
 
 .button--ghost {
-  color: #248675;
-  border: 2px solid #248675;
+  color: #ffffff;
+  background-color: #000000;
+  border: 2px solid #000000;
 }
 
 .button--ghost:hover {
-  background: #248675;
-  color: #ffffff;
   transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
