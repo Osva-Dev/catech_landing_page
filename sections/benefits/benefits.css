@@ -15,6 +15,17 @@
   max-width: 50%;
 }
 
+.benefits__title {
+  margin: 0;
+}
+
+.benefits__subtitle {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #474747;
+}
+
 .benefits__grid {
   display: flex;
   gap: 30px;
