@@ -1,5 +1,4 @@
 .comparison {
-  margin-top: 80px;
   height: 800px;
   background-color: #191919;
 }
@@ -7,18 +6,25 @@
 .comparison__container {
   background-color: #191919;
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 0px auto;
   padding: 0 20px;
 }
+
+.comparison__header {
+  padding-top: 120px;
+}
 .comparison__title {
+  max-width: 50%;
   margin: 0;
   margin-bottom: 40px;
   color: #ffffff;
-} /* FLEX CONTAINER */
+}
+
 .comparison__grid {
   display: flex;
   gap: 20px;
-} /* card */
+}
+
 .comparison__card {
   flex: 1;
   background: #ffffff;
