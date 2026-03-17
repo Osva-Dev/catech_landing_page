@@ -2,8 +2,8 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: #ffffff;
-  border-bottom: 1px solid #e6f4f2;
+  background: #191919;
+  border-bottom: 1px solid #7b8382;
 }
 
 .header__container {
@@ -28,12 +28,12 @@
 
 .header__nav-link {
   text-decoration: none;
-  color: #000;
+  color: #d4d3d3;
   font-size: 1.4rem;
   font-weight: 500;
   transition: color 0.25s ease;
 }
 
 .header__nav-link:hover {
-  color: #056a64;
+  color: #ffffff;
 }
