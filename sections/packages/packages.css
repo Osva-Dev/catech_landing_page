@@ -47,8 +47,6 @@
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
 }
 
-/* TITLE */
-
 .package__title {
   font-size: 1.6rem;
   margin-bottom: 8px;
@@ -69,8 +67,6 @@
   margin-bottom: 25px;
 }
 
-/* FEATURES */
-
 .package__features {
   list-style: none;
   padding: 0;
@@ -86,7 +82,6 @@
   color: #334e4e;
   line-height: 1.5;
 }
-/* CTA BUTTON */
 
 .package__cta {
   display: inline-block;
@@ -107,10 +102,6 @@
   background: #044f4a;
 }
 
-/* POPULAR PLAN */
-
-/* BADGE */
-
 .package__badge {
   background: #056a64;
   color: white;
@@ -122,8 +113,6 @@
 
   margin-bottom: 10px;
 }
-
-/* NOTE */
 
 .packages__note {
   text-align: center;
