@@ -51,6 +51,10 @@ const sections = [
     path: "sections/footer/footer.html",
     id: "footer",
   },
+  {
+    path: "components/whatssappButton/whatssappButton.html",
+    id: "whatssappButton",
+  },
 ];
 
 sections.forEach((component) => {
