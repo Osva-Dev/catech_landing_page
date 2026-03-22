@@ -8,7 +8,7 @@ async function loadComponent(path, elementId) {
 
 const sections = [
   {
-    path: "sections/header/header.html",
+    path: "layouts/header/header.html",
     id: "header",
   },
   {
@@ -48,7 +48,7 @@ const sections = [
     id: "form",
   },
   {
-    path: "sections/footer/footer.html",
+    path: "layouts/footer/footer.html",
     id: "footer",
   },
   {
