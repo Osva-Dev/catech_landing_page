@@ -1,12 +1,13 @@
 .hero {
-  max-width: 1200px;
-  margin: 100px auto 100px;
+  padding: 100px 0;
 }
 
 .hero__container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   gap: 60px;
+  align-items: center;
 }
 
 .hero__content {
@@ -47,6 +48,8 @@
 .button--primary {
   background: #248675;
   color: #ffffff;
+  padding: 12px 38px;
+  font-size: 1.4rem;
 }
 
 .button--primary:hover {
@@ -59,9 +62,123 @@
   color: #ffffff;
   background-color: #000000;
   border: 2px solid #000000;
+  padding: 12px 38px;
+  font-size: 1.4rem;
 }
 
 .button--ghost:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1280px) {
+  .hero__container {
+    margin: 0 30px;
+  }
+  .hero__title {
+    font-size: 3rem;
+  }
+  .hero__subtitle {
+    font-size: 1.3rem;
+  }
+  .button--primary,
+  .button--ghost {
+    font-size: 1.2rem;
+    padding: 12px 36px;
+  }
+}
+
+@media screen and (max-width: 1084px) {
+  .hero__title {
+    font-size: 2.6rem;
+  }
+  .hero__subtitle {
+    font-size: 1.2rem;
+  }
+  .button--primary,
+  .button--ghost {
+    font-size: 1rem;
+    padding: 12px 36px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero__container {
+    gap: 40px;
+  }
+
+  .hero__title {
+    font-size: 2.4rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+
+  .button--primary,
+  .button--ghost {
+    font-size: 1.1rem;
+    padding: 10px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 0;
+  }
+
+  .hero__container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__title {
+    font-size: 2.2rem;
+    margin-top: 0;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .button--primary,
+  .button--ghost {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero__container {
+    margin: 0 20px;
+  }
+
+  .hero__title {
+    font-size: 2.2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.2rem;
+  }
+
+  .button--primary,
+  .button--ghost {
+    font-size: 1.6rem;
+    padding: 10px 20px;
+  }
 }
