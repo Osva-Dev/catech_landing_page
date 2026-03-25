@@ -24,3 +24,8 @@ Buscamos implementar una pagina web para atraer clientes en base a paquetes, cad
 1. Portafolio de Proyectos
 2. Marcas con las que se colaboraron
 3.
+
+## Demo
+
+- Portafolio en línea:
+  [https://osva-dev.github.io/catech_landing_page/](https://osva-dev.github.io/catech_landing_page/)
