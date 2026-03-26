@@ -1,43 +1,42 @@
 .problem {
-  display: flex;
   margin-top: 210px;
   background-color: #ffffff;
 }
 
 .problem__container {
   max-width: 1200px;
+  padding: 0 24px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
 .problem__header {
-  max-width: 50%;
+  max-width: 600px;
   margin-top: 90px;
 }
 
-.problem__title {
-  margin: 0;
-}
-
 .problem__subtitle {
-  margin: 0;
   margin-top: 20px;
   font-size: 1.4rem;
   color: #474747;
 }
 
 .problem__grid {
-  display: flex;
-  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: center;
   gap: 30px;
+  margin-top: 60px;
 }
 
 .problem-card {
+  width: 240px;
+  height: 320px;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  flex: 1 1 calc(25% - 30px);
+  align-items: center;
+  text-align: center;
   background: #ffffff;
   padding: 30px;
   border-radius: 14px;
@@ -66,6 +65,7 @@
 .problem__card-icon {
   width: 5rem;
   height: 5rem;
+  margin-bottom: 15px;
 }
 
 .problem-card__title {
@@ -75,8 +75,33 @@
 }
 
 .problem-card__text {
-  text-align: center;
   color: #334e4e;
   font-size: 1rem;
   line-height: 1.6;
+}
+
+/* tablet → 2 centradas */
+@media (max-width: 1024px) {
+  .problem__grid {
+    grid-template-columns: repeat(2, max-content);
+  }
+
+  .problem__header {
+    max-width: 100%;
+  }
+}
+
+/* mobile → 1 centrada */
+@media (max-width: 768px) {
+  .problem__grid {
+    grid-template-columns: max-content;
+  }
+
+  .problem {
+    margin-top: 140px;
+  }
+
+  .problem__header {
+    text-align: center;
+  }
 }

@@ -46,8 +46,6 @@
   display: block;
 }
 
-/* BOTONES */
-
 .button--primary,
 .button--ghost {
   padding: 12px 38px;
@@ -76,10 +74,6 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* ========================= */
-/* <=1280px */
-/* ========================= */
-
 @media (max-width: 1280px) {
   .hero__title {
     font-size: 3rem;
@@ -96,10 +90,6 @@
   }
 }
 
-/* ========================= */
-/* <=1084px (lo conservamos) */
-/* ========================= */
-
 @media (max-width: 1084px) {
   .hero__title {
     font-size: 2.6rem;
@@ -115,10 +105,6 @@
     padding: 12px 30px;
   }
 }
-
-/* ========================= */
-/* <=1024px */
-/* ========================= */
 
 @media (max-width: 1024px) {
   .hero__container {
@@ -140,10 +126,6 @@
   }
 }
 
-/* ========================= */
-/* <=840px (corregido typo) */
-/* ========================= */
-
 @media (max-width: 840px) {
   .hero__title {
     font-size: 2.1rem;
@@ -162,10 +144,6 @@
     padding: 18px 20px;
   }
 }
-
-/* ========================= */
-/* <=768px (CAMBIO DE LAYOUT) */
-/* ========================= */
 
 @media (max-width: 768px) {
   .hero {
@@ -208,10 +186,6 @@
     max-width: 400px;
   }
 }
-
-/* ========================= */
-/* <=480px */
-/* ========================= */
 
 @media (max-width: 480px) {
   .hero {
