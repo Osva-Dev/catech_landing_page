@@ -156,17 +156,22 @@
   }
 
   .hero__content {
-    max-width: 100%;
-    width: 500px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .hero__title {
-    font-size: 2.2rem;
-    margin-top: 0;
+    font-size: 2.4rem;
+    margin: 0;
+    text-align: left;
+    max-width: 100%;
   }
 
   .hero__subtitle {
     font-size: 1.4rem;
+    text-align: left;
+    max-width: 100%;
   }
 
   .hero__actions {
