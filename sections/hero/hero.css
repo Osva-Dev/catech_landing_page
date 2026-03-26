@@ -1,10 +1,11 @@
 .hero {
-  padding: 100px 0;
+  padding: 90px 0 30px;
 }
 
 .hero__container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 24px;
   display: flex;
   gap: 60px;
   align-items: center;
@@ -45,11 +46,17 @@
   display: block;
 }
 
+/* BOTONES */
+
+.button--primary,
+.button--ghost {
+  padding: 12px 38px;
+  font-size: 1.4rem;
+}
+
 .button--primary {
   background: #248675;
   color: #ffffff;
-  padding: 12px 38px;
-  font-size: 1.4rem;
 }
 
 .button--primary:hover {
@@ -62,8 +69,6 @@
   color: #ffffff;
   background-color: #000000;
   border: 2px solid #000000;
-  padding: 12px 38px;
-  font-size: 1.4rem;
 }
 
 .button--ghost:hover {
@@ -71,36 +76,49 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (max-width: 1280px) {
-  .hero__container {
-    margin: 0 30px;
-  }
+/* ========================= */
+/* <=1280px */
+/* ========================= */
+
+@media (max-width: 1280px) {
   .hero__title {
     font-size: 3rem;
   }
+
   .hero__subtitle {
     font-size: 1.3rem;
   }
+
   .button--primary,
   .button--ghost {
     font-size: 1.2rem;
-    padding: 12px 36px;
+    padding: 12px 34px;
   }
 }
 
-@media screen and (max-width: 1084px) {
+/* ========================= */
+/* <=1084px (lo conservamos) */
+/* ========================= */
+
+@media (max-width: 1084px) {
   .hero__title {
     font-size: 2.6rem;
   }
+
   .hero__subtitle {
     font-size: 1.2rem;
   }
+
   .button--primary,
   .button--ghost {
-    font-size: 1rem;
-    padding: 12px 36px;
+    font-size: 1.1rem;
+    padding: 12px 30px;
   }
 }
+
+/* ========================= */
+/* <=1024px */
+/* ========================= */
 
 @media (max-width: 1024px) {
   .hero__container {
@@ -108,33 +126,60 @@
   }
 
   .hero__title {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.1rem;
+  }
+
+  .button--primary,
+  .button--ghost {
+    font-size: 0.9rem;
+    padding: 16px 30px;
+  }
+}
+
+/* ========================= */
+/* <=840px (corregido typo) */
+/* ========================= */
+
+@media (max-width: 840px) {
+  .hero__title {
+    font-size: 2.1rem;
   }
 
   .hero__subtitle {
     font-size: 1rem;
   }
 
+  .hero__actions {
+    gap: 20px;
+  }
   .button--primary,
   .button--ghost {
-    font-size: 1.1rem;
-    padding: 10px 24px;
+    font-size: 1rem;
+    padding: 18px 20px;
   }
 }
 
+/* ========================= */
+/* <=768px (CAMBIO DE LAYOUT) */
+/* ========================= */
+
 @media (max-width: 768px) {
   .hero {
-    padding: 80px 0;
+    padding: 130px 0;
   }
 
   .hero__container {
     flex-direction: column;
     text-align: center;
-    gap: 40px;
   }
 
   .hero__content {
     max-width: 100%;
+    width: 500px;
   }
 
   .hero__title {
@@ -143,7 +188,7 @@
   }
 
   .hero__subtitle {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .hero__actions {
@@ -152,33 +197,45 @@
     gap: 16px;
   }
 
+  .hero__visual {
+    display: none;
+  }
+
   .button--primary,
   .button--ghost {
+    font-size: 1.5rem;
     width: 100%;
-    max-width: 280px;
+    max-width: 400px;
   }
 }
 
+/* ========================= */
+/* <=480px */
+/* ========================= */
+
 @media (max-width: 480px) {
   .hero {
-    padding: 60px 0;
+    padding: 170px 0;
   }
 
-  .hero__container {
-    margin: 0 20px;
+  .hero__content {
+    max-width: 100%;
+    width: 400px;
   }
 
   .hero__title {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
   .hero__subtitle {
-    font-size: 1.2rem;
+    font-size: 0.95rem;
   }
 
   .button--primary,
   .button--ghost {
-    font-size: 1.6rem;
-    padding: 10px 20px;
+    font-size: 1.4rem;
+    padding: 16px 20px;
+    width: 100%;
+    max-width: 350px;
   }
 }
