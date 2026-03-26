@@ -188,7 +188,7 @@
   .button--ghost {
     font-size: 1.5rem;
     width: 100%;
-    max-width: 400px;
+    max-width: 365px;
   }
 }
 
@@ -225,6 +225,6 @@
   .button--ghost {
     font-size: 1.2rem;
     padding: 14px 18px;
-    width: 100%;
+    width: 355px;
   }
 }
