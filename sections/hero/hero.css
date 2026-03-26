@@ -194,27 +194,37 @@
 
 @media (max-width: 480px) {
   .hero {
-    padding: 170px 0;
+    padding: 150px 0;
   }
 
   .hero__content {
-    max-width: 100%;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .hero__title {
     font-size: 1.8rem;
+    margin: 0;
+    text-align: left;
   }
 
   .hero__subtitle {
-    font-size: 0.95rem;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .hero__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
   }
 
   .button--primary,
   .button--ghost {
-    font-size: 1.4rem;
-    padding: 16px 20px;
+    font-size: 1.2rem;
+    padding: 14px 18px;
     width: 100%;
-    max-width: 350px;
   }
 }
