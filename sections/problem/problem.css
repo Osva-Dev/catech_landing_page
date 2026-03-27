@@ -80,7 +80,6 @@
   line-height: 1.6;
 }
 
-/* tablet → 2 centradas */
 @media (max-width: 1024px) {
   .problem__grid {
     grid-template-columns: repeat(2, max-content);
@@ -91,8 +90,13 @@
   }
 }
 
-/* mobile → 1 centrada */
 @media (max-width: 768px) {
+  .problem__title {
+    text-align: left;
+  }
+  .problem__subtitle {
+    text-align: left;
+  }
   .problem__grid {
     grid-template-columns: max-content;
   }
